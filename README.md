@@ -154,4 +154,5 @@ Then change these two:
 <int name="FramerateCap">9999</int>
 ```
 
+Then press CTRL+S to save the changes.
 This will unlock your fps and lower the quality level.
