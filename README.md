@@ -1,4 +1,11 @@
-# Roblox-Max-Performance
+## Roblox-Max-Performance
+
+Do these:
+
+```bash
+Open Game Mode in settings.
+Disable Memory Integerity in Windows Security.
+```
 
 Copy the path to the "RobloxPlayerBeta.exe", you can use Task Manager to do that.
 Then go to the properties of that .exe and thick these:
@@ -11,7 +18,26 @@ Run this program as an administator
 Then in Graphics in Settings, click on "Add desktop app" and in the same path add that .exe file.
 Then expand "Roblox Game Client" and set GPU preference to High Performance and Optimizations for windowed games to off.
 
-Then Install Process Lasso and do these for Roblox:
+Instal Process Lasso and these are the main settings to do/tick:
+
+```bash
+1. Main > Manage Processes of All Users
+2. Main > Active Power Profile > Choose Highest Performance
+3. Main > ProBalance Enabled
+4. Options > General > Manage Processes of All Users
+5. Options > General > Refresh Interval (GUI) > 5 seconds
+6. Options > General > Refresh Interval (Governor) > 5 seconds
+7. Options > CPU > ProBalance > Enable ProBalance
+8. Options > CPU > ProBalance > Do Not Act on Foreground Process
+9. Options > CPU > ProBalance > Do Not Act on Children of the Foreground Process
+10. Options > CPU > ProBalance > Do Not Act on Processes of Non-Normal Priority
+11. Options > CPU > ProBalance > Do Not Act on Services
+12. Options > Power > Performance Mode > Change Power Profile when Engaged
+13. Options > Power > Performance Mode > Enable Automatic Detection (e.g, Steam)
+14. Options > Power > Performance Mode > Disable IdleSaver while Performance Mode Engaged
+```
+
+Then do these for Roblox:
 
 ```bash
 CPU Priority > Always > Real Time
@@ -43,6 +69,7 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
   "DFIntAnimationLodFacsVisibilityDenominator": "0",
   "FStringPartTexturePackTablePre2022": "",
   "FStringTerrainMaterialTable2022": "",
+  "FStringTerrainMaterialTablePre2022": "",
   "FIntDebugTextureManagerSkipMips": "-1",
   "DFIntDebugRestrictGCDistance": "1",
   "DFIntTextureCompositorActiveJobs": "0",
@@ -91,7 +118,6 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
   "FFlagFastGPULightCulling3": "True",
   "FFlagDebugForceFSMCPULightCulling": "True",
   "DFIntMaxFrameBufferSize": "1",
-  "FIntTerrainArraySliceSize": "0",
   "FIntRenderGrassDetailStrands": "0",
   "FIntRenderGrassHeightScaler": "0",
   "FIntRuntimeMaxNumOfThreads": "2400",
@@ -141,8 +167,6 @@ Then choose Program settings and open Roblox from there, here is all the setting
 26. Vulkan/OpenGL present method: Auto
 ```
 
-You can disable Memory Integerity in Windows Security for max performance.
-
 Next, press Win+R and write "appdata" and enter.
 Then go to Local > Roblox folder.
 
@@ -155,3 +179,18 @@ Then change these two:
 
 Then press CTRL+S to save the changes.
 This will unlock your fps.
+
+# Regedit
+
+Press Win+R and write "regedit" then run it.
+
+Here is everything that should be done:
+
+```bash
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling\PowerThrottlingOff = 1
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\NetworkThrottlingIndex = ffffffff
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583\Attributes = 0
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games\Priority = 6, GPU Priority = 8, Scheduling Category = High, SFIO Priority = High
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Direct3D\MaxPreRenderedFrames = 1
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\SystemResponsiveness = 10
+```
