@@ -143,3 +143,5 @@ Then choose Program settings and open Roblox from there, here is all the setting
 25. Virtual Realiyu pre-rendered frames: 1
 26. Vulkan/OpenGL present method: Auto
 ```
+
+You can disable Memory Integerity in Windows Security for max performance.
