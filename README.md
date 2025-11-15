@@ -150,9 +150,8 @@ Then edit GlobalBasicSettings_13.xml with notepad.
 Then change these two:
 
 ```bash
-<int name="GraphicsQualityLevel">1</int>
 <int name="FramerateCap">9999</int>
 ```
 
 Then press CTRL+S to save the changes.
-This will unlock your fps and lower the quality level.
+This will unlock your fps.
