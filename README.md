@@ -1,7 +1,5 @@
 # Roblox-Max-Performance
 
-Optimizations for Maximizing Roblox Performance
-
 Copy the path to the "RobloxPlayerBeta.exe", you can use Task Manager to do that.
 Then go to the properties of that .exe and thick these:
 
@@ -113,7 +111,6 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
 This makes the quality lowest possible.
 
 Then go to NVIDIA Control Panel and make sure to tick "Use the advanced 3D image settings" and click on "Take me there".
-
 Then choose Program settings and open Roblox from there, here is all the settings:
 
 ```bash
@@ -145,3 +142,16 @@ Then choose Program settings and open Roblox from there, here is all the setting
 ```
 
 You can disable Memory Integerity in Windows Security for max performance.
+
+Next, press Win+R and write "appdata" and enter.
+Then go to Local > Roblox folder.
+
+Then edit GlobalBasicSettings_13.xml with notepad.
+Then change these two:
+
+```bash
+<int name="GraphicsQualityLevel">1</int>
+<int name="FramerateCap">9999</int>
+```
+
+This will unlock your fps and lower the quality level.
