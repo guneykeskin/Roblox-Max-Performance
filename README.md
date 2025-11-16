@@ -5,7 +5,11 @@ Do these:
 ```bash
 Open Game Mode in settings.
 Disable Memory Integerity in Windows Security.
+Enable Hardware accelerated GPU scheduling.
 ```
+
+Go to View advanced system settings and go to Advanced Tab, from there go to Performance and there in Visual Effects choose adjust for best performance.
+Then go to Advanced Tab from there and go to Virtual Memory, from there untick the tick in the top and choose custom size and write Max and Min size as 16000.
 
 Copy the path to the "RobloxPlayerBeta.exe", you can use Task Manager to do that.
 Then go to the properties of that .exe and thick these:
