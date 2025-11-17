@@ -89,7 +89,28 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
   "DFFlagDebugPauseVoxelizer": "True",
   "FIntCSGVoxelizerFadeRadius": "0",
   "FFlagDebugGraphicsPreferVulkan": "True",
-  "DFFlagDebugRenderForceTechnologyVoxel": "True",
+  "FFlagDebugForceFutureIsBrightPhase2": "True",
+  "FFlagDebugForceFutureIsBrightPhase3": "True",
+  "FFlagRenderFixFog": "True",
+  "DFFlagFastEndUpdateLoop": "True",
+  "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "1",
+  "DFFlagEnableMeshPreloading2": "True",
+  "FFlagDebugDeterministicParticles": "False",
+  "FIntRomarkStartWithGraphicQualityLevel": "1",
+  "FIntCameraFarZPlane": "1",
+  "DFIntMaxMissedWorldStepsRemembered": "1",
+  "FFlagEnableTerrainOptimizations": "True",
+  "FFlagEnableTerrainFoliageOptimizations": "True",
+  "DFIntRenderingThrottleDelayInMS": "1",
+  "DFIntConnectionMTUSize": "1500",
+  "DFIntWaitOnUpdateNetworkLoopEndedMS": "100",
+  "FFlagFasterPreciseTime4": "True",
+  "FFlagGameBasicSettingsFramerateCap": "True",
+  "FFlagShaderLightingRefactor": "True",
+  "FFlagRenderNoLowFrmBloom": "False",
+  "DFIntAssemblyExtentsExpansionStudHendredth": "0",
+  "FFlagDebugHumanoidRendering": "False",
+  "DFFlagDebugRenderForceTechnologyVoxel": "False",
   "FFlagGlobalWindRendering": "False",
   "FFlagDebugDisableShadows": "True",
   "FIntRenderShadowIntensity": "0",
@@ -121,7 +142,7 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
   "FFlagNewLightAttenuation": "True",
   "FFlagFastGPULightCulling3": "True",
   "FFlagDebugForceFSMCPULightCulling": "True",
-  "DFIntMaxFrameBufferSize": "1",
+  "DFIntMaxFrameBufferSize": "0",
   "FIntRenderGrassDetailStrands": "0",
   "FIntRenderGrassHeightScaler": "0",
   "FIntRuntimeMaxNumOfThreads": "2400",
@@ -133,6 +154,12 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
   "DFFlagDisableDPIScale": "True",
   "FIntFontSizePadding": "4",
   "FLogNetwork": "7",
+  "FFlagOptimizeNetwork": "True",
+  "FFlagOptimizeNetworkRouting": "True",
+  "FFlagOptimizeNetworkTransport": "True",
+  "FFlagOptimizeServerTickRate": "True",
+  "DFIntServerPhysicsUpdateRate": "60",
+  "DFIntServerTickRate": "60",
   "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
   "FFlagDebugDisableTelemetryEphemeralCounter": "True",
   "FFlagDebugDisableTelemetryEphemeralStat": "True",
@@ -144,7 +171,7 @@ Then go to the same folder where that .exe file is and add the folder named "Cli
 }
 ```
 
-This makes the quality lowest possible.
+This makes the quality lowest possible and increases fps.
 
 Then go to NVIDIA Control Panel and make sure to tick "Use the advanced 3D image settings" and click on "Take me there".
 Then choose Program settings and open Roblox from there, here is all the settings:
