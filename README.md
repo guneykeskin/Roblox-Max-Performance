@@ -231,3 +231,35 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\Syste
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Direct3D\MaxPreRenderedFrames = 1
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\SystemResponsiveness = 10
 ```
+
+# NVIDIA Profile Inspector
+Install NVIDIA Profile Inspector, then as profile select "Roblox".
+
+Now these are all the settings to change from default:
+
+```bash
+Maximum Pre-Rendered Frame: 1
+Prefered Refreshrate: Highest available
+Ultra Low Latency - CPL State: Ultra
+Ultra Low Latenc - Enabled: On
+Vertical Sync: Force Off
+Antialiasing - FXAA Enabled (predefined by NVIDIA): Off
+Antialiasing - Gamma Correction: Off
+Antialiasing - Transparency Supersampling: 0x00000008 AA_MODE_REPLAY_MODE_ALL
+Antialiasing - (MSAA) - Mode: Override any application setting
+Anisotropic Filter - Optimization: On
+Anisotropic Filter - Sample Ootimization: On
+Prevent Anisotropic Filtering: On
+Texture Filtering - LOD Bias (DX): 0x00000045
+Texture Filtering - LOD Bias (OGL): 0x00000045
+Texture Filtering - LOD Bias Auto-Adjust  (for SGSSAA): On
+Texture Filtering - Negative LOD bias: Clamp
+Amnbient Occlusion - Setting: Performance
+Ansel - Enabled: Iff
+rBAR - Enable: Enabled
+rBAR - Options: 0x00000001 (Returnal, Red Dead Redemption 2)
+rBAR - Size Limit: 0x0000000040000000
+Shader Cache - Cache Size: Unlimited
+Threaded Optimization: On
+NVIDIA Predefined Ansel Usage: 0x00000000 ANSEL_ALLOW_DISALLOWED
+```
